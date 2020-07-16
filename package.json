@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaviHaze/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "front-end"
+  ],
+  "author": "Monica R",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ClaviHaze/portfolio/issues"
+  },
+  "homepage": "https://github.com/ClaviHaze/portfolio#readme",
+  "dependencies": {}
+}
