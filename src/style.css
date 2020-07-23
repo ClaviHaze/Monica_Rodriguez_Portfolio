@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Poppins|Kaushan+Script|Bree+Serif|Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Lato|Poppins|Kaushan+Script");
 .has-vertically-aligned-content {
   display: flex;
   flex-direction: column;
@@ -20,30 +20,32 @@ html {
 }
 
 .hero {
-  background: linear-gradient(#ffd02b, rgb(230, 216, 20)), rgba(0, 0, 0, 0.55) no-repeat;
+  background: linear-gradient(#ffd02b, #85733391), #000000 url("https://i.ibb.co/QcSk1kP/Background-code.png") no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  color: rgb(0, 0, 0);
-  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  color: white;
+  box-shadow: inset 0 3px 6px #000000, 0 3px 6px #000000;
   font-family: 'Poppins', sans-serif;
 }
 
 .hero .title {
-  font-family: 'Bree Serif';
+  font-family: 'Kaushan Script', sans-serif;
   transform: rotate(-5deg);
   font-size: 5rem;
-  color: #000000;
+  color: whitesmoke;
 }
 
 .hero .subtitle {
   padding: 5px;
-  color: rgb(3, 3, 3);
-  margin-right: 50%;
+  color: whitesmoke;
+}
+
+.hero .presents {
+  padding-top: 5%;
 }
 
 .hero .profession {
-  font-family: 'Montserrat', sans-serif;
-  padding-top: 50px;
+  padding-top: 2%;
   font-size: 1.7rem;
   text-transform: uppercase;
 }
@@ -51,7 +53,7 @@ html {
 .hero .hero-foot {
   height: 50px;
   background: white;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
+  box-shadow: 0 2px 15px #000000;
 }
 
 @media (max-width: 599px) {
@@ -80,22 +82,22 @@ html {
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li.is-active a {
-  border-bottom: 2px solid #1f2c6c;
+  border-bottom: 2px solid #ffd02b;
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a {
-  color: #1f2c6c;
+  color: #313434;
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a:hover {
-  color: #1f2c6c;
+  color: #ffd02b;
   transition: all .2s ease-in-out;
-  border-bottom: 2px solid #1f2c6c;
+  border-bottom: 2px solid #7c6616;
 }
 
 .main-content {
   padding-top: 2rem;
-  color: #3c4172;
+  color: #313434;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -119,9 +121,18 @@ html {
   padding: 20px;
 }
 
+.main-content .section-dark.resume button {
+  border: 2px solid #bb9408;
+  background: white;
+  color: #bb9715;
+  height: 50px;
+  width: 250px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
 
 .main-content .section-dark.resume .fa-download {
-  color: #f89bfc;
+  color: #967708;
 }
 
 .main-content .section-dark.my-work {
@@ -141,7 +152,7 @@ html {
   border-radius: 5px;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
+  box-shadow: 0 5px 20px #ffd02b);
 }
 
 .main-content .section-dark.my-work .work-item:hover {
@@ -156,7 +167,7 @@ html {
 }
 
 .main-content .section-light.about-me {
-  padding-bottom: 100px;
+  padding-bottom: 5%;
 }
 
 .main-content .section-light.about-me .is-larger {
@@ -172,7 +183,7 @@ html {
 .main-content .section-light.about-me .right-image img {
   border-radius: 11px;
   margin: 20px;
-  box-shadow: 0 5px 20px rgba(255, 249, 196, 0.3);
+  box-shadow: 0 5px 20px #7a6516;
 }
 
 @media (max-width: 599px) {
@@ -197,12 +208,12 @@ html {
 }
 
 .main-content .section-light.contact {
-  padding: 200px;
+  padding: 5%;
 }
 
 .main-content .section-light.contact button {
   width: 100%;
-  background-color: #43485c;
+  background-color: #313434;
   color: white;
   height: 50px;
   font-size: 1.1rem;
@@ -218,7 +229,7 @@ html {
 
 .main-content .section-color.services {
   padding: 100px;
-  background-color: #43485c;
+  background-color: #313434;
   color: white;
 }
 
@@ -233,7 +244,7 @@ html {
 }
 
 .main-content .section-title {
-  color: #43485c;
+  color: #a88a1c;
   text-transform: uppercase;
   font-size: 1.8rem;
   letter-spacing: 2px;
@@ -247,14 +258,14 @@ html {
   height: 80px;
   line-height: 25px;
   text-align: center;
-  background: #e6d70a;
-  color: rgb(0, 0, 0);
+  background: #ffd02b;
+  color: #313434;
   padding-top: 2rem;
 }
 
 .footer a {
   padding: 0rem 1rem 1rem 1rem;
-  color: lightgrey;
+  color: gray;
 }
 
 .footer a i {
@@ -263,11 +274,11 @@ html {
 }
 
 .footer a .nav-item {
-  color: rgb(0, 0, 0);
+  color: whitesmoke;
 }
 
 .fa-download {
-  color: #43485c;
+  color: #d3a602;
 }
 
 #toTop {
@@ -280,12 +291,12 @@ html {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #ffd02b;
+  background-color: #d4ae22;
   color: white;
   cursor: pointer;
   border-radius: 50%;
   font-size: 2rem;
-  box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
+  box-shadow: 0 5px 20px #55450d;
 }
 
 #toTop a {
@@ -293,18 +304,18 @@ html {
 }
 
 #toTop:hover {
-  background-color: #fffeb7;
+  background-color: #aa8800;
 }
 
 ::-webkit-scrollbar {
   width: 8px;
-  background-color: rgba(245, 245, 245, 0);
+  background-color: #ffffff00;
 }
 
 ::-webkit-scrollbar-thumb {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #fffab7;
+  background-color: #6d6751;
 }
 
 body.preloader-site {
@@ -314,7 +325,7 @@ body.preloader-site {
 .preloader-wrapper {
   height: 100%;
   width: 100%;
-  background: #ebe709;
+  background: #816d24;
   position: fixed;
   top: 0;
   left: 0;
@@ -330,5 +341,5 @@ body.preloader-site {
   width: 120px;
 }
 
-.white
-{color:ghostwhite}
+.gray
+{color: #313434}

@@ -4,28 +4,50 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title> Monica Rodriguez </title>
-    <!-- Bulma Version 0.8.x-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"> </script>
+    <title>Monica Rodriguez</title>
+    <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2828f7885a.js"
+      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+      crossorigin="anonymous"
+    ></script>
     <link rel="icon" type="image/png" href="favicon.png" />
   </head>
+
   <body>
+    <!-- Begin Preloader -->
+    <div class="preloader-wrapper">
+      <div class="preloader">
+        <img src="https://i.ibb.co/F5p40y2/preloader.gif" alt="" />
+      </div>
+    </div>
+    <!-- End Preloader-->
     <!-- Begin Scroll Up Button -->
-      <form action="#home">
-        <button id="toTop" title="Go to top">
-          <i class="fas fa-angle-up"> </i>
-        </button>
-      </form>
+
+    <form action="#home">
+      <button id="toTop" title="Go to top">
+        <i class="fas fa-angle-up"></i>
+      </button>
+    </form>
     <!-- End Scroll Up Button -->
+
     <!-- Begin Header -->
     <div class="header-wrapper" id="home">
       <!-- Begin Hero -->
-      <section class="hero is-large">
+      <section class="hero is-medium">
         <!-- Begin Mobile Nav -->
         <nav class="navbar is-transparent is-hidden-desktop">
+          <!-- Begin Burger Menu -->
+          <div class="navbar-brand">
+            <div class="navbar-burger burger" data-target="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- End Burger Menu -->
           <div id="mobile-nav" class="navbar-menu">
             <div class="navbar-end">
               <div class="navbar-item">
@@ -34,23 +56,23 @@
                 </a>
               </div>
               <div class="navbar-item">
-                <a class="navbar-item" href="#about-me">
-                  Sobre Mí
+                <a class="navbar-item" href="#my-work">
+                  My Projects
                 </a>
               </div>
-              <div class="navbar-item">
+              <!-- <div class="navbar-item">
                 <a class="navbar-item" href="#skills">
                   Skills
                 </a>
-              </div>
+              </div>-->
               <div class="navbar-item">
-                <a class="navbar-item" href="#my-work">
-                  Mis proyectos
+                <a class="navbar-item" href="#about-me">
+                  About Me
                 </a>
               </div>
               <div class="navbar-item">
                 <a class="navbar-item" href="#contact">
-                  Contact Me
+                  Contact
                 </a>
               </div>
             </div>
@@ -59,10 +81,19 @@
         <!-- End Mobile Nav -->
         <!-- Begin Hero Content-->
         <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="subtitle">Hi, I'm Monica</h1>
-            <h2 class="title">Best practices, neat code and hard work are my every day</h2>
-            <h1 class="subtitle profession"> Scroll down! ↓</h1>
+          <div class="container">
+            <h2 class="title is-spaced">Neat code and hard work are my every day</h2>
+            <div class="columns">
+              <div class="column is-half">
+                <h1 class="subtitle presents">Hey, I'm Mónica, and I'm...</h1>
+                <h1 class="subtitle profession">A FRONT END DEVELOPER</h1>
+              </div>
+              <div class="column is-half">
+                <div class="buttons is-centered">
+                  <a class="button is-large is-warning is-inverted" id="heroBtn">Learn More</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- End Hero Content-->
@@ -73,16 +104,19 @@
               <div class="column is-12 hero-menu-desktop has-text-centered">
                 <ul>
                   <li class="is-active">
-                    <a href="#home"> Home </a>
+                    <a href="#home">Home</a>
                   </li>
                   <li>
-                    <a href="#my-work"> Projects </a>
+                    <a href="#my-work">My Projects</a>
+                  </li>
+                  <!--<li>
+                    <a href="#skills">Skills</a>
+                  </li>-->
+                  <li>
+                    <a href="#about-me">About Me</a>
                   </li>
                   <li>
-                    <a href="#skills"> Skills </a>
-                  </li>
-                  <li>
-                    <a href="#about-me"> About Me </a>
+                    <a href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -96,134 +130,207 @@
     <!-- End Header -->
     <!-- Begin Main Content -->
     <div class="main-content">
-              <!-- Begin Work Content -->
+      <!-- Begin Work Content -->
       <div class="section-dark my-work" id="my-work">
         <div class="container">
-          <div class="columns is-multiline" data-aos="fade-in" data-aos-easing="linear">
+          <div
+            class="columns is-multiline"
+            data-aos="fade-in"
+            data-aos-easing="linear"
+          >
             <div class="column is-12">
-              <h1 class="title has-text-centered section-title"> Projects </h1>
+              <h1 class="title has-text-centered section-title">My Projects</h1>
             </div>
-            <div class="column is-3">
-                <p class="subtitle"> Data Lovers - PokéGo Space </p>
-                <figure class="image is-4by5 work-item">
-                <img src="Pokemon1.png" alt="Pokemon1">
+            <!-- Begin Social Network Project -->
+            <div class="box columns">
+              <div class="column is-one-third">
+                <figure class="text">
+                  <h1 class="title has-text-left section-title">Social Network</h1>
+                  <h1 class="title has-text-left section-title">Memingos</h1>
+                  <h2 class="subtitle has-text-left">
+                    A meme based social network. Data is managed through Firebase which allows a registration,
+                    login and the ability to post images with captions; it also keeps user profile information.
+                  </h2>
+                  <h2 class="subtitle has-text-left">
+                    Made with Mobile-First in mind and use of CSS Bulma Framework.
+                  </h2>
+                  <div class="buttons is-centered">
+                    <a class="button is-warning is-medium" target="_blank" href="https://fasez26.github.io/CDMX009-Social-Network/src/index.html">Site</a>          
+                    <a class="button is-medium" target="_blank" href="https://github.com/fasez26/CDMX009-Social-Network">
+                      <span class="icon is-medium">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Repository</span>
+                    </a>
+                  </div>
                 </figure>
-              </a>
-              <p> Find info about Kanto Pokemon </p>
-                <a href="https://clavihaze.github.io/CDMX009-Data-Lovers/src/" class="card-footer-item"rel="noopener noreferrer" target="_blank"> Preview </a>
+              </div>
+              <div class="column is-one-third">
+                  <figure class="image is-centered">
+                    <img src="images\Memingos_Login.svg"/>
+                  </figure>
+              </div>
+              <div class="column is-one-third">
+                  <figure class="image is-centered">
+                    <img src="images\Memingos_Main.svg"/>
+                  </figure>
+              </div>
             </div>
-            <div class="column is-3">
-                <br>
-                <figure class="image is-4by5 work-item">
-                  <img src="Pokemon2.png" alt="Pokemon2">
+          </br>
+            <!-- End Social Network Project -->
+            <!-- Begin Data Lovers Project -->
+            <div class="box columns">
+              <div class="column is-one-third">
+                <figure class="text">
+                  <h1 class="title has-text-left section-title">Data Lovers</h1>
+                  <h1 class="title has-text-left section-title">PokeGo Space</h1>
+                  <h2 class="subtitle has-text-left">
+                    A database with relevant information of the "Pokemon Go" game and it's first 151 pokemon. 
+                    It uses JSON files to store the info and dynamically generates html.
+                  </h2>
+                  <h2 class="subtitle has-text-left">
+                    Use array methods for filtering and has a mobile-first approach where it shows detailed information 
+                    of each pokemon.
+                  </h2>
+                  <div class="buttons is-centered">
+                    <a class="button is-warning is-medium" target="_blank" href="https://clavihaze.github.io/CDMX009-Data-Lovers/src/">Site</a>          
+                    <a class="button is-medium" target="_blank" href="https://github.com/ClaviHaze/CDMX009-Data-Lovers">
+                      <span class="icon is-medium">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Repository</span>
+                    </a>
+                  </div>
                 </figure>
-              </a>
+              </div>
+              <div class="column">
+                  <figure class="image is-centered">
+                    <img src="images\PokeGo_List&Details.png"/>
+                  </figure>
+              </div>
             </div>
-            <div class="column is-3"></div>
-                <figure class="image is-5by3 work-item"> 
-                <img src="macbook1.png"/>
-                </figure>
-              </a>
-            </div>
-            <div class="column is-3">
-                <figure class="image is-5by3 work-item">
-                  <img src="macbook2.png"/>
-                </figure>
-              </a>
-              <p> In collaboration with </p> 
-              <a href="https://github.com/Anne1916">Anabel Vargas</a>
-              <a href="https://github.com/ClaviHaze/CDMX009-Data-Lovers" class="card-footer-item" rel="noopener noreferrer" target="_blank"> GitHub Repository </a>
-            </div>
-            <div class="column is-3">
-              <p class="subtitle"> Memingo's </p>
-                <figure class="image is-4by5 work-item">
-                <a href="https://fasez26.github.io/CDMX009-Social-Network/src/index.html">
-                <img src="iPhone1.png"/>
-                </figure>
-                </a>
-                <br>
-                <p> The meme social network </p>
-                <br>
-              <a href="https://fasez26.github.io/CDMX009-Social-Network/src/index.html" class="card-footer-item" rel="noopener noreferrer" target="_blank"> Preview </a>
-            </div>
-            <div class="column is-3">
-                <br>
-                <figure class="image is-4by5 work-item">
-                <img src="iPhone2.png"/>
-                </figure>
-              </a>
-            </div>
-            <div class="column is-3">
-                <br>
-                <figure class="image is-4by5 work-item">
-                  <img src="iPad1.png"/>
-                </figure>
-              </a>
-            </div>
-            <div class="column is-3">
-                <br>
-                <figure class="image is-4by5 work-item"> 
-                  <img src="iPad2.png"/>
-                </figure>
-              </a>
-              <p> In collaboration with </p>
-              <a href="https://github.com/fasez26">Nallely Flores</a>
-              <p> and </p>
-              <a href="https://github.com/TangCherry">Danaee Partida</a>
-              <a href="https://github.com/fasez26/CDMX009-Social-Network" class="card-footer-item" rel="noopener noreferrer" target="_blank"> GitHub Repository </a>
-            </div>
+            <!-- End Data Lovers Project -->
           </div>
         </div>
       </div>
       <!-- End Work Content -->
-    </div>
-    <!-- End Main Content -->
-      <!-- Begin Skills Content --> <!--
-      <div class="section-light about-me" id="about-me">
+      <!-- Begin Skills Content 
+      <div class="section-color services" id="services">
         <div class="container">
-          <div class="column is-12 about-me">
-            <h1 class="title has-text-centered section-title"> Skills </h1>
-          </div>
           <div class="columns is-multiline">
-            <div class="column is-6 has-vertically-aligned-content" data-aos="fade-right">
-              <div class="is-divider"> </div>
-              <div class="columns about-links">
-                <div class="column">
-                    <a href="https://github.com/ClaviHaze" class="button is-medium is-github" rel="noopener noreferrer" target="_blank">
-                      <span class="icon">
-                        <i class="fab fa-github fa-lg"> </i>
-                      </span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/MonicaRodriguezRomero/" class="button is-medium is-linkedin" rel="noopener noreferrer" target="_blank">
-                      <span class="icon">
-                        <i class="fab fa-linkedin fa-lg"> </i>
-                      </span>
-                    </a>
-                </div>
+            <div
+              class="column is-12 about-me"
+              data-aos="fade-in"
+              data-aos-easing="linear"
+            >
+              <h1 class="title has-text-centered section-title">Skills</h1>
+            </div>
+            <div class="columns is-12">
+              <div
+                class="column is-4 has-text-centered"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+              >
+                <i class="fad fa-meteor fa-3x"></i>
+                <hr />
+                <h2>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h2>
+              </div>
+              <div
+                class="column is-4 has-text-centered"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+              >
+                <i class="fas fa-paint-brush fa-3x"></i>
+                <hr />
+                <h2>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h2>
+              </div>
+              <div
+                class="column is-4 has-text-centered"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+              >
+                <i class="fas fa-rocket fa-3x"></i>
+                <hr />
+                <h2>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h2>
               </div>
             </div>
-            <div class="column is-6 right-image " data-aos="fade-left">
-              <img width="40%" height="40%" src="Perfil.jpg" alt="Perfil">
+            <hr />
+            <div class="columns is-12">
+              <div
+                class="column is-4 has-text-centered"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+              >
+                <i class="fas fa-upload fa-3x"></i>
+                <hr />
+                <h2>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h2>
+              </div>
+              <div
+                class="column is-4 has-text-centered"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+              >
+                <i class="fas fa-bus fa-3x"></i>
+                <hr />
+                <h2>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h2>
+              </div>
+              <div
+                class="column is-4 has-text-centered"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+              >
+                <i class="fas fa-code fa-3x"></i>
+                <hr />
+                <h2>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h2>
+              </div>
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
       <!-- End Skills Content -->
-       <!-- Begin About Me Section -->
-       <div class="section-light about-me" id="about-me">
+      <!-- Begin About Me Section -->
+      <div class="section-light about-me" id="about-me">
         <div class="container">
           <div class="column is-12 about-me">
-            <h1 class="title has-text-centered section-title"> About Me </h1>
+            <h1 class="title has-text-centered section-title">About Me</h1>
           </div>
           <div class="columns is-multiline">
-            <div class="column is-6 has-vertically-aligned-content" data-aos="fade-right">
-              <br>
-              <p>
-                Committed to get the best results possible on every project I work on. 
-                Hard work advocate willing to colaborate with partners ready to optimize workflow and deliver satisfying products.
+            <div
+              class="column is-6 has-vertically-aligned-content"
+              data-aos="fade-right"
+            >
+              <p class="is-larger">
+                &emsp;&emsp;<strong>
+                  
+                  </strong>
               </p>
-              <br>
-              <div class="is-divider"> </div>
+              <br />
+              <p>
+                I'm Monica, a Front End developer hailing from Mexico. Always wondering how
+                my favorite websites were made, my curiosity for it took me to Laboratoria, a
+                coding bootcamp where I learnt web design, Agile methodology and how to develop
+                professional websites.
+              </p>
+              <br />
+              <div class="is-divider"></div>
               <div class="columns about-links">
                 <div class="column">
                   <p class="heading">
@@ -234,46 +341,120 @@
                   </p>
                 </div>
                 <div class="column">
-                    <a href="https://github.com/ClaviHaze" class="button is-medium is-github" rel="noopener noreferrer" target="_blank">
-                      <span class="icon">
-                        <i class="fab fa-github fa-lg"> </i>
-                      </span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/MonicaRodriguezRomero/" class="button is-medium is-linkedin" rel="noopener noreferrer" target="_blank">
-                      <span class="icon">
-                        <i class="fab fa-linkedin fa-lg"> </i>
-                      </span>
-                    </a>
+                  <p class="heading">
+                    <strong>Resume</strong>
+                  </p>
+                  <form action="https://drive.google.com/file/d/1cNBAAwKEaHZnvJnEit5Wd-MfZ7uw35aH/view?usp=sharing">
+                    <button class="button">
+                      Download&emsp;<i class="fad fa-download fa-lg"></i>
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>
             <div class="column is-6 right-image " data-aos="fade-left">
-              <img width="40%" height="40%" src="Perfil.jpg" alt="Perfil">
+              <img
+                class="is-rounded"
+                src="https://picsum.photos/id/366/600/375"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </div>
       <!-- End About Me Content -->
+      <!-- Begin Contact Content -->
+      <div class="section-light contact" id="contact">
+        <div class="container">
+          <div
+            class="columns is-multiline"
+          >
+            <div class="column is-12 about-me">
+              <h1 class="title has-text-centered section-title">
+                Get in touch
+              </h1>
+            </div>
+            <div class="column is-8 is-offset-2">
+              <form
+                action="https://formspree.io/monica.rrom23@gmail.com"
+                method="POST"
+              >
+                <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control has-icons-left">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Ex. Jane Smith"
+                      name="Name"
+                    />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-user"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control has-icons-left">
+                    <input
+                      class="input"
+                      type="email"
+                      placeholder="Ex. hello@arctheme.com"
+                      name="Email"
+                    />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Message</label>
+                  <div class="control">
+                    <textarea
+                      class="textarea"
+                      placeholder="Textarea"
+                      name="Message"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control ">
+                    <button class="button submit-button">
+                      Submit&nbsp;&nbsp;
+                      <i class="fas fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact Content -->
+    </div>
+    <!-- End Main Content -->
+
     <!-- Begin Footer -->
     <div class="footer">
       <p>
-        <strong class="blue">Bulma</strong> by <a href="http://jgthms.com" style="color: #089999;">Jeremy Thomas</a>.
+        <strong class="gray">Bulma </strong>by<a href="http://jgthms.com">Jeremy Thomas.</a>
         The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php" style="color: #089999;">MIT</a>. The website content is licensed
-        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="color: #089999;">CC BY NC SA 4.0</a>.
+        <a href="http://opensource.org/licenses/mit-license.php">MIT.</a>The website content is licensed
+        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0.</a>
       </p>
     </div>
     <!-- End Footer -->
+
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="index.js"> </script>
+    <script src="main.js"></script>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"> </script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
       AOS.init({
         easing: "ease-out",
         duration: 800,
       });
     </script>
-    </body>
+  </body>
 </html>
