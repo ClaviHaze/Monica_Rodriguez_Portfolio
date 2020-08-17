@@ -13,10 +13,10 @@
       integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
       crossorigin="anonymous"
     ></script>
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/png" href="https://i.ibb.co/SmJb4YW/M.png" />
   </head>
 
-  <body>
+  <body class="has-navbar-fixed-top">
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
       <div class="preloader">
@@ -25,105 +25,82 @@
     </div>
     <!-- End Preloader-->
     <!-- Begin Scroll Up Button -->
-
     <form action="#home">
       <button id="toTop" title="Go to top">
         <i class="fas fa-angle-up"></i>
       </button>
     </form>
     <!-- End Scroll Up Button -->
-
     <!-- Begin Header -->
     <div class="header-wrapper" id="home">
-      <!-- Begin Hero -->
-      <section class="hero is-medium">
-        <!-- Begin Mobile Nav -->
-        <nav class="navbar is-transparent is-hidden-desktop">
-          <!-- Begin Burger Menu -->
-          <div class="navbar-brand">
-            <div class="navbar-burger burger" data-target="mobile-nav">
-              <span></span>
-              <span></span>
-              <span></span>
+      <!-- Begin Mobile Nav -->
+      <nav class="navbar is-warning is-fixed-top is-transparent " role="navigation" aria-label="main navigation">
+        <!-- Begin Burger Menu -->
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#home">
+            <img src="https://i.ibb.co/tZQtK1B/mrrom.png" width="112" height="28">
+          </a>
+          <div role="button" id="burger" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="mobile-nav">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </div>
+        </div>
+        <!-- End Burger Menu -->
+        <div id="mobile-nav" class="navbar-menu">
+          <div class="navbar-start" data-target="mobile-nav">
+            <a class="navbar-item is-active" href="#home">
+              Inicio
+            </a>
+            <a class="navbar-item" href="#my-work">
+              Mis Proyectos
+            </a>
+            <!-- 
+              <a class="navbar-item" href="#skills">
+                Habilidades
+              </a>
+            -->
+              <a class="navbar-item" href="#about-me">
+                Sobre mí
+              </a>
+              <a class="navbar-item" href="#contact">
+                Contacto
+              </a>
+          </div>
+          <!-- Start Language Toggle --
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a id="english" class="button is-light">
+                  ENGLISH
+                </a>
+                <a id="spanish" class="button is-warning is-inverted">
+                  <strong>ESPAÑOL</strong>
+                </a>
+              </div>
             </div>
           </div>
-          <!-- End Burger Menu -->
-          <div id="mobile-nav" class="navbar-menu">
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <a class="navbar-item" href="#home">
-                  Home
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#my-work">
-                  My Projects
-                </a>
-              </div>
-              <!-- <div class="navbar-item">
-                <a class="navbar-item" href="#skills">
-                  Skills
-                </a>
-              </div>-->
-              <div class="navbar-item">
-                <a class="navbar-item" href="#about-me">
-                  About Me
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#contact">
-                  Contact
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
+          <!-- End Language Toggle -->
+        </div>
+      </nav>
         <!-- End Mobile Nav -->
-        <!-- Begin Hero Content-->
+      <!-- Begin Hero -->
+      <section class="hero is-medium is-fullheight-with-navbar">
         <div class="hero-body">
           <div class="container">
-            <h2 class="title is-spaced">Neat code and hard work are my every day</h2>
+            <h2 class="title is-spaced">Código limpio y ordenado más trabajo en equipo para el mejor resultado</h2>
             <div class="columns">
               <div class="column is-half">
-                <h1 class="subtitle presents">Hey, I'm Mónica, and I'm...</h1>
-                <h1 class="subtitle profession">A FRONT END DEVELOPER</h1>
+                <h1 class="subtitle">Soy Mónica, una desarrolladora Front End con gusto por el autoaprendizaje</h1>
               </div>
               <div class="column is-half">
                 <div class="buttons is-centered">
-                  <a class="button is-large is-warning is-inverted" id="heroBtn">Learn More</a>
+                  <a class="button is-large is-warning is-inverted" id="heroBtn">Aquí mi trabajo</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- End Hero Content-->
-        <!-- Begin Hero Menu -->
-        <div class="hero-foot ">
-          <div class="hero-foot--wrapper">
-            <div class="columns">
-              <div class="column is-12 hero-menu-desktop has-text-centered">
-                <ul>
-                  <li class="is-active">
-                    <a href="#home">Home</a>
-                  </li>
-                  <li>
-                    <a href="#my-work">My Projects</a>
-                  </li>
-                  <!--<li>
-                    <a href="#skills">Skills</a>
-                  </li>-->
-                  <li>
-                    <a href="#about-me">About Me</a>
-                  </li>
-                  <li>
-                    <a href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Hero Menu -->
       </section>
       <!-- End Hero -->
     </div>
@@ -139,20 +116,20 @@
             data-aos-easing="linear"
           >
             <div class="column is-12">
-              <h1 class="title has-text-centered section-title">My Projects</h1>
+              <h1 class="title has-text-centered section-title">Mis Proyectos</h1>
             </div>
             <!-- Begin Social Network Project -->
             <div class="box columns">
               <div class="column is-one-third">
                 <figure class="text">
-                  <h1 class="title has-text-left section-title">Social Network</h1>
-                  <h1 class="title has-text-left section-title">Memingos</h1>
+                  <h1 class="title has-text-left section-project">Red Social</h1>
+                  <h1 class="title has-text-left section-subtitle">Memingo's</h1>
                   <h2 class="subtitle has-text-left">
-                    A meme based social network. Data is managed through Firebase which allows a registration,
-                    login and the ability to post images with captions; it also keeps user profile information.
+                    Red social basada en los populares "Memes". Los datos se manejan a través de Firebase, lo que permite registrarse, 
+                    hacer login y postear imágenes con pié de foto. También guarda información del perfil del usuario. 
                   </h2>
                   <h2 class="subtitle has-text-left">
-                    Made with Mobile-First in mind and use of CSS Bulma Framework.
+                    Hecho con Mobile First en mente y el framework de CSS, Bulma.
                   </h2>
                   <div class="buttons is-centered">
                     <a class="button is-warning is-medium" target="_blank" href="https://fasez26.github.io/CDMX009-Social-Network/src/index.html">Site</a>          
@@ -160,7 +137,7 @@
                       <span class="icon is-medium">
                         <i class="fab fa-github"></i>
                       </span>
-                      <span>Repository</span>
+                      <span>Repositorio</span>
                     </a>
                   </div>
                 </figure>
@@ -182,15 +159,14 @@
             <div class="box columns">
               <div class="column is-one-third">
                 <figure class="text">
-                  <h1 class="title has-text-left section-title">Data Lovers</h1>
-                  <h1 class="title has-text-left section-title">PokeGo Space</h1>
+                  <h1 class="title has-text-left section-project">Data Lovers</h1>
+                  <h1 class="title has-text-left section-subtitle">PokeGo Space</h1>
                   <h2 class="subtitle has-text-left">
-                    A database with relevant information of the "Pokemon Go" game and it's first 151 pokemon. 
-                    It uses JSON files to store the info and dynamically generates html.
+                    Base de datos con información relevante para el juego de "Pokémon Go" y sus primeros 151 pokémons. 
+                    Usa un archivo JSON para los datos y genera HTML dinámico.
                   </h2>
                   <h2 class="subtitle has-text-left">
-                    Use array methods for filtering and has a mobile-first approach where it shows detailed information 
-                    of each pokemon.
+                    Usa métodos de arreglos para filtrar y esta hecho con Mobile First en mente.
                   </h2>
                   <div class="buttons is-centered">
                     <a class="button is-warning is-medium" target="_blank" href="https://clavihaze.github.io/CDMX009-Data-Lovers/src/">Site</a>          
@@ -198,7 +174,7 @@
                       <span class="icon is-medium">
                         <i class="fab fa-github"></i>
                       </span>
-                      <span>Repository</span>
+                      <span>Repositorio</span>
                     </a>
                   </div>
                 </figure>
@@ -310,24 +286,23 @@
       <div class="section-light about-me" id="about-me">
         <div class="container">
           <div class="column is-12 about-me">
-            <h1 class="title has-text-centered section-title">About Me</h1>
+            <h1 class="title has-text-centered section-title">Sobre Mí</h1>
           </div>
           <div class="columns is-multiline">
             <div
               class="column is-6 has-vertically-aligned-content"
               data-aos="fade-right"
             >
-              <p class="is-larger">
-                &emsp;&emsp;<strong>
-                  
-                  </strong>
+              <p>
+                Soy Mónica, una desarrolladora Front End de México. Siempre me pregunté como
+                funcionaban mis sitios web favoritos y mi curiosidad me llevo a Laboratoria,
+                un bootcamp de programación donde aprendí diseño web, metodología Ágil y como
+                desarrollar sitios web profesionales.
               </p>
               <br />
               <p>
-                I'm Monica, a Front End developer hailing from Mexico. Always wondering how
-                my favorite websites were made, my curiosity for it took me to Laboratoria, a
-                coding bootcamp where I learnt web design, Agile methodology and how to develop
-                professional websites.
+                Siempre estoy interesada en mantenerme con las tendencias en diseño y busco estar
+                actualizada con las nuevas documentaciones y métodos.
               </p>
               <br />
               <div class="is-divider"></div>
@@ -342,11 +317,11 @@
                 </div>
                 <div class="column">
                   <p class="heading">
-                    <strong>Resume</strong>
+                    <strong>Currículum</strong>
                   </p>
                   <form action="https://drive.google.com/file/d/1cNBAAwKEaHZnvJnEit5Wd-MfZ7uw35aH/view?usp=sharing">
                     <button class="button">
-                      Download&emsp;<i class="fad fa-download fa-lg"></i>
+                      Descargar&emsp;<i class="fad fa-download fa-lg"></i>
                     </button>
                   </form>
                 </div>
@@ -371,7 +346,7 @@
           >
             <div class="column is-12 about-me">
               <h1 class="title has-text-centered section-title">
-                Get in touch
+                Contacto
               </h1>
             </div>
             <div class="column is-8 is-offset-2">
@@ -380,12 +355,12 @@
                 method="POST"
               >
                 <div class="field">
-                  <label class="label">Name</label>
+                  <label class="label">Nombre</label>
                   <div class="control has-icons-left">
                     <input
                       class="input"
                       type="text"
-                      placeholder="Ex. Jane Smith"
+                      placeholder="Ej. Jane Smith"
                       name="Name"
                     />
                     <span class="icon is-small is-left">
@@ -399,7 +374,7 @@
                     <input
                       class="input"
                       type="email"
-                      placeholder="Ex. hello@arctheme.com"
+                      placeholder="Ej. nombre@ejemplo.com"
                       name="Email"
                     />
                     <span class="icon is-small is-left">
@@ -408,11 +383,11 @@
                   </div>
                 </div>
                 <div class="field">
-                  <label class="label">Message</label>
+                  <label class="label">Mensaje</label>
                   <div class="control">
                     <textarea
                       class="textarea"
-                      placeholder="Textarea"
+                      placeholder="Escribe aquí tu mensaje..."
                       name="Message"
                     ></textarea>
                   </div>
@@ -420,7 +395,7 @@
                 <div class="field">
                   <div class="control ">
                     <button class="button submit-button">
-                      Submit&nbsp;&nbsp;
+                      Enviar&nbsp;&nbsp;
                       <i class="fas fa-paper-plane"></i>
                     </button>
                   </div>
@@ -437,9 +412,9 @@
     <!-- Begin Footer -->
     <div class="footer">
       <p>
-        <strong class="gray">Bulma </strong>by<a href="http://jgthms.com">Jeremy Thomas.</a>
-        The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT.</a>The website content is licensed
+        <strong class="gray">Bulma </strong>por<a href="http://jgthms.com">Jeremy Thomas.</a>
+        Código fuente con licencia
+        <a href="http://opensource.org/licenses/mit-license.php">MIT.</a>El contenido de este sitio tiene licencia
         <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0.</a>
       </p>
     </div>

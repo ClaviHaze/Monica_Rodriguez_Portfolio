@@ -29,45 +29,31 @@ html {
 }
 
 .hero .title {
-  font-family: 'Kaushan Script', sans-serif;
-  transform: rotate(-5deg);
-  font-size: 5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
   color: whitesmoke;
+  width: 70%;
+}
+
+@media (max-width: 599px) {
+  .hero .title {
+    width: 100%
+  }
 }
 
 .hero .subtitle {
+  font-family: 'Poppins', sans-serif;
   padding: 5px;
   color: whitesmoke;
 }
 
-.hero .presents {
-  padding-top: 5%;
-}
-
-.hero .profession {
-  padding-top: 2%;
-  font-size: 1.7rem;
-  text-transform: uppercase;
-}
-
-.hero .hero-foot {
+.navbar {
   height: 50px;
   background: white;
   box-shadow: 0 2px 15px #000000;
 }
 
-@media (max-width: 599px) {
-  .hero .hero-foot {
-    display: none;
-  }
-}
-
-.hero .hero-foot .hero-foot--wrapper {
-  margin: 7px auto;
-  height: 50px;
-}
-
-.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop {
+.navbar .navbar-menu .navbar-start {
   line-height: 38px;
   font-weight: 600;
   text-transform: lowercase;
@@ -75,24 +61,18 @@ html {
   font-size: 1rem;
 }
 
-.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li {
-  display: inline-block;
-  padding-right: 15px;
-  padding-left: 15px;
+.navbar .navbar-menu .navbar-start .is-active {
+  border-bottom: 3px solid #ffd02b;
 }
 
-.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li.is-active a {
-  border-bottom: 2px solid #ffd02b;
-}
-
-.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a {
+.navbar .navbar-menu .navbar-start .navbar-item {
   color: #313434;
 }
 
-.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a:hover {
+.navbar .navbar-menu .navbar-start .navbar-item:hover {
   color: #ffd02b;
   transition: all .2s ease-in-out;
-  border-bottom: 2px solid #7c6616;
+  border-bottom: 3px solid #7c6616;
 }
 
 .main-content {
@@ -136,12 +116,12 @@ html {
 }
 
 .main-content .section-dark.my-work {
-  padding: 120px;
+  padding: 6%;
 }
 
 @media (max-width: 599px) {
   .main-content .section-dark.my-work {
-    padding: 75px 20px;
+    padding: 30% 20px;
   }
 }
 
@@ -152,7 +132,7 @@ html {
   border-radius: 5px;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 5px 20px #ffd02b);
+  box-shadow: 0 5px 20px #ffd02b;
 }
 
 .main-content .section-dark.my-work .work-item:hover {
@@ -163,7 +143,13 @@ html {
 }
 
 .main-content .section-light {
-  padding: 30px;
+  padding-top: 5%;
+}
+
+@media (max-width: 599px) {
+  .main-content .section-light {
+    padding: 15% 5%;
+  }
 }
 
 .main-content .section-light.about-me {
@@ -223,7 +209,7 @@ html {
 
 @media (max-width: 599px) {
   .main-content .section-light.contact {
-    padding: 60px 20px;
+    padding: 20% 5%;
   }
 }
 
@@ -249,6 +235,20 @@ html {
   font-size: 1.8rem;
   letter-spacing: 2px;
   padding-bottom: 30px;
+}
+
+.main-content .section-project {
+  color: #a88a1c;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.main-content .section-subtitle {
+  color: #a88a1c;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-style: italic;
+  padding-bottom: 5%;
 }
 
 .footer {
