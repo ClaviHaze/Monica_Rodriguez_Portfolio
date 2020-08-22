@@ -1,7 +1,3 @@
-//import english from './utils/english.js';
-//import spanish from './utils/spanish.js' 
-
-
 // Get that hamburger menu cookin' //
 document.addEventListener("DOMContentLoaded", function() {
   // Get all "navbar-burger" elements
@@ -58,21 +54,9 @@ function scrollFunction() {
     document.getElementById("toTop").style.display = "block";
   } else {
     document.getElementById("toTop").style.display = "none";
-  }
-}
-//Change Languages 
-/*const engBtn = document.querySelector('#english');
-const spaBtn = document.querySelector('#spanish');
-const content = document.querySelector('#content');
-spaBtn.addEventListener('click', () =>  {
-  content.innerHTML = '';
-  content.innerHTML = spanish;
-});
-engBtn.addEventListener('click', () =>  {
-  content.innerHTML = '';
-  content.innerHTML = english;
-});
-*/
+  };
+};
+
 // Preloader
 $(document).ready(function($) {
   $(".preloader-wrapper").fadeOut();
@@ -83,9 +67,10 @@ $(window).on("load", function() {
   Body.addClass("preloader-site");
 });
 
-const mywork = document.querySelector('#my-work');
-const heroBtn = document.querySelector('#heroBtn');
+const mywork = document.getElementById('my-work');
+const heroBtn = document.getElementById('heroBtn');
 heroBtn.addEventListener('click', () =>  {
+  console.log(heroBtn)
   mywork.scrollIntoView({
     behavior: 'smooth', inline: 'end',
   });
